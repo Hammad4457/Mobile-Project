@@ -1,36 +1,39 @@
-.container{
-    display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
-    justify-content: center;
+.container {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .card {
-   
-    
-    
-    width: 250px;
-    border-radius: 50;
-    background-color: whitesmoke;
-    height: 100;
-    overflow: hidden;
-    
-
-
-
+  width: 250px;
+  border-radius: 50;
+  background-color: whitesmoke;
+  height: 80;
+  overflow: hidden;
+  border: 2px solid rgb(47, 255, 71);
+  background-color: blanchedalmond;
 }
-h2{
-    text-align: center;
+h2 {
+  text-align: center;
+  color: aliceblue;
+  margin-bottom: 5px;
 }
 
+h3 {
+  text-align: center;
+  color: aliceblue;
+  margin-bottom: 20px;
+}
 
 .card img {
-    border: 2px solid #ccc;
-   
-    
-    margin-top: 15px;
-    width: 300px;
-    
-   
-    border-radius: 8px;
+  border: 2px solid whitesmoke;
+
+  margin-top: 5px;
+
+  width: 245px;
+  background-color: black;
 }
 
+* {
+  background-color: black;
+}
