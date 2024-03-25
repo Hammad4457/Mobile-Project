@@ -1,0 +1,36 @@
+.container{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card {
+   
+    
+    
+    width: 250px;
+    border-radius: 50;
+    background-color: whitesmoke;
+    height: 100;
+    overflow: hidden;
+    
+
+
+
+}
+h2{
+    text-align: center;
+}
+
+
+.card img {
+    border: 2px solid #ccc;
+   
+    
+    margin-top: 15px;
+    width: 300px;
+    
+   
+    border-radius: 8px;
+}
+
