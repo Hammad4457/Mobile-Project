@@ -19,10 +19,13 @@ h2 {
   margin-bottom: 5px;
 }
 
-h3 {
+h3:hover {
+  background-color: yellowgreen;
   text-align: center;
   color: aliceblue;
-  margin-bottom: 20px;
+
+  cursor: pointer;
+  overflow: hidden;
 }
 
 .card img {
@@ -39,16 +42,20 @@ h3 {
 }
 
 .loader {
-  border: 8px solid #f3f3f3; 
-  border-top: 8px solid #3498db; 
-  border-radius: 50%; 
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #3498db;
+  border-radius: 50%;
   width: 50px;
   height: 50px;
-  animation: spin 2s linear infinite; 
-  margin: auto; 
+  animation: spin 2s linear infinite;
+  margin: auto;
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); } 
-  100% { transform: rotate(360deg); } 
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
