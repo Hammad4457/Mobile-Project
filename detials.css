@@ -1,0 +1,36 @@
+*{
+    background-color:aqua;
+  }
+.container1,container2,container3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  }
+  p1{
+    font-size:large;
+    font-style: oblique;
+    text-align: center;
+    color: black;
+  }
+  p2{
+    font-size:large;
+    font-style: oblique;
+    margin-left: 750px;
+   
+    color:black;
+  }
+  
+  h1{
+    color: rgb(50, 205, 55);
+    font-size: xx-large;
+    
+  }
+  
+  img{
+    margin-top: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }

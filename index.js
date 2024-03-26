@@ -14,6 +14,8 @@ async function fetchData() {
 
 async function displayData() {
   const container = document.querySelector(".container");
+  const loader=document.getElementById("loader");
+  loader.style.display='block'
   try {
     const data = await fetchData();
     data.products.forEach((element) => {
@@ -32,15 +34,21 @@ async function displayData() {
       card.appendChild(image);
       card.appendChild(press);
       container.appendChild(card);
+
+
       press.addEventListener("click", function () {
-        alert("Good Choice");
-        window.location.href = "index2.html";
-        console.log(element.data);
-        return console.log(data.products);
+  
+          
+          window.location.href = `details.html?id=${element.id}`;        
+         
       });
-    });
+
+
+    } )
   } catch (error) {
     console.error("Error occurred:", error);
+  const loader = document.getElementById('loader');
+  loader.style.display = 'none';
   }
 }
 
