@@ -1,5 +1,7 @@
 *{
     background-color:aqua;
+    margin-left: 12px;
+    margin-top: 5px;
   }
 .container1,container2,container3 {
     display: flex;
@@ -13,7 +15,7 @@
     text-align: center;
     color: black;
   }
-  p2{
+  p2,p3,p4{
     font-size:large;
     font-style: oblique;
     margin-left: 750px;
@@ -22,7 +24,7 @@
   }
   
   h1{
-    color: rgb(50, 205, 55);
+    color: rgb(50, 122, 205);
     font-size: xx-large;
     
   }

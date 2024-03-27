@@ -25,7 +25,7 @@ async function displayData() {
       const image = document.createElement("img");
       image.src = element.thumbnail;
 
-      const names = document.createElement("h2");
+      const names = document.createElement("p");
       names.textContent = element.title;
 
       const press = document.createElement("h3");

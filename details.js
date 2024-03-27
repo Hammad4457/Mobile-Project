@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded",async ()=>{
 
     const params=new URLSearchParams(window.location.search);
-    const id =  params.get("desc1")
+    const id =  params.get("id")
+    console.log(id);
     const productDetails = await fetchData(id);
     Update(productDetails);
 
@@ -23,19 +24,31 @@ function Update(details){
 
   const priceCard = document.querySelector(".container2");
 
-  const imageCard = document.querySelector(".container3");
+  const ratingCard = document.querySelector(".container3");
+
+  const discountCard = document.querySelector(".container4");
+
+  const imageCard = document.querySelector(".container5");
 
   const description=document.createElement("p1")
   description.textContent=details.description;
 
   const price=document.createElement("p2")
-  price.textContent=details.price;
+  price.textContent=details.price+"$";
+
+  const discount=document.createElement("p3");
+  discount.textContent=details.discountPercentage+"%";
+
+  const rating=document.createElement("p4");
+  rating.textContent=details.rating;
 
   const image=document.createElement("img");
   image.src=details.thumbnail;
 
   desCard.appendChild(description);
   priceCard.appendChild(price);
+  discountCard.appendChild(discount);
+  ratingCard.appendChild(rating);
   imageCard.appendChild(image)
   console.log(description)
 }
